@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pdf view</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>View PDF</h1>
+		<div id="viewpdf"></div>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="pdfobject.min.js"></script>
+	<script type="text/javascript">
+		var viewer = $('#viewpdf');
+		PDFObject.embed('CV.pdf',viewer);
+	</script>
+</body>
+</html>
